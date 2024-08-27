@@ -171,6 +171,8 @@ export default function CreateListing() {
             maxLength='62'
             minLength='10'
             required
+            onChange={handleChange}
+            value={formData.name}
           />
           <textarea
             type='text'
@@ -179,7 +181,7 @@ export default function CreateListing() {
             id='description'
             required
             onChange={handleChange}
-            value={formData.name}
+            value={formData.description}
           />
           <input
             type='text'
